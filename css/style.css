@@ -1,0 +1,108 @@
+/* line 3, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.content {
+  font-family: 'Lato', sans-serif; }
+
+/* line 7, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.main_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+/* line 14, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.logo {
+  display: flex;
+  width: 12vw;
+  height: 10vh;
+  margin-left: 10vh; }
+
+/* line 21, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.menu {
+  display: flex; }
+  /* line 23, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+  .menu li {
+    color: #532B13;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    padding: 1vh 2vh;
+    border-radius: 3%;
+    font-size: 3vh;
+    display: none;
+    margin-right: 13vh; }
+    @media (min-width: 1000px) {
+      /* line 23, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+      .menu li {
+        display: inline-block; } }
+
+/* line 40, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.main_box {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 1000px) {
+    /* line 40, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+    .main_box {
+      flex-direction: row; } }
+
+/* line 47, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.left_side .left_top, .left_side .left_bottom, .right_side .right_top, .right_side .right_bottom, .right_side .right_middle {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 58, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.left_side {
+  width: 100vw; }
+  @media (min-width: 1000px) {
+    /* line 58, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+    .left_side {
+      width: 55vw; } }
+  /* line 63, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+  .left_side .left_top {
+    height: 45vh;
+    background-image: url(../img/Iran.jpg);
+    background-size: cover;
+    background-position: center; }
+  /* line 70, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+  .left_side .left_bottom {
+    height: 45vh;
+    background-image: url(../img/tatry.JPG);
+    background-size: cover;
+    background-position: center; }
+
+/* line 79, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.right_side {
+  width: 100vw; }
+  @media (min-width: 1000px) {
+    /* line 79, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+    .right_side {
+      width: 45vw; } }
+  /* line 84, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+  .right_side .right_top {
+    height: 27vh;
+    background-color: #BDB93C; }
+  /* line 89, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+  .right_side .right_bottom {
+    height: 27vh;
+    background-color: #3FB592; }
+  /* line 94, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+  .right_side .right_middle {
+    height: 36vh;
+    background-image: url(../img/gocha.jpg);
+    background-size: cover; }
+
+/* line 104, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+.box_border {
+  padding: 3vh;
+  font-size: 4vw;
+  display: flex;
+  border: 5px solid white;
+  color: white;
+  margin: auto;
+  border-radius: 4%;
+  flex-direction: row; }
+  /* line 113, C:/Users/Kasia/Desktop/TRAWERS 2.0/css/style.scss */
+  .box_border img {
+    display: flex;
+    margin-right: 3vh; }
+
+/*# sourceMappingURL=style.css.map */

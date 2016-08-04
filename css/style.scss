@@ -1,0 +1,117 @@
+//header//
+
+.content {
+  font-family: 'Lato', sans-serif;
+}
+
+.main_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  width: 12vw;
+  height: 10vh;
+  margin-left: 10vh;
+}
+
+.menu {
+  display: flex;
+  li{
+  color: #532B13;
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+  padding: 1vh 2vh;
+  border-radius: 3%;
+  font-size: 3vh;
+  display: none;
+  margin-right: 13vh;
+  @media (min-width: 1000px) {
+    display: inline-block;
+    }
+  }
+}
+
+//main-box
+
+.main_box {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1000px) {
+  flex-direction: row;
+}
+}
+%position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%mobilesize {
+  width: 100vw;
+  height: 50vh;
+}
+
+.left_side {
+   width: 100vw;
+  @media (min-width: 1000px) {
+    width: 55vw;
+  }
+    .left_top{
+    @extend %position;
+    height:45vh;
+    background-image: url(../img/Iran.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+    .left_bottom {
+    @extend %position;
+    height:45vh;
+    background-image: url(../img/tatry.JPG);
+    background-size: cover;
+    background-position: center;
+    }
+ }
+
+.right_side{
+  width: 100vw;
+  @media (min-width: 1000px) {
+    width: 45vw;
+  }
+  .right_top{
+    @extend %position;
+    height:27vh;
+    background-color:#BDB93C;
+  }
+  .right_bottom {
+    @extend %position;
+    height:27vh;
+    background-color: #3FB592;
+  }
+  .right_middle {
+    @extend %position;
+    height:36vh;
+    background-image: url(../img/gocha.jpg);
+    background-size: cover;
+  }
+}
+
+//inside boxes 
+
+.box_border {
+  padding: 3vh;
+  font-size: 4vw;
+  display: flex;
+  border: 5px solid white;
+  color: white;
+  margin: auto;
+  border-radius: 4%;
+  flex-direction: row;
+  img {
+    display: flex;
+    margin-right: 3vh;
+  }
+}

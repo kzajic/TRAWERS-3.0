@@ -13,8 +13,8 @@ body {
 
 .logo {
   display: flex;
-  width: 195px;
-  height: 75px;
+  width: 12vw;
+  height: 10vh;
   margin-left: 10vh;
 }
 
@@ -61,7 +61,7 @@ a {
 
 .left_side {
    width: 100vw;
-    @media (min-width: 1000px) {
+  @media (min-width: 1000px) {
     width: 55vw;
   }
     .left_top{
@@ -202,14 +202,14 @@ color: #BDB93C;
 .info_fest {
   text-align: justify;
   padding: 8vh;
-  background-color:  #4A2D25;
+  background-color:  #3FB592;
   color: white;
   font-size: 3vh;
   line-height: 4vh;
 }
 
 .add {
-  background-image: url(../img/tlo.jpg);
+  background-color: #BDB93C;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -220,113 +220,4 @@ color: #BDB93C;
     justify-content: center;
     align-items: center;
   }
-}
-
-// w polske
-
-
-.main_slider {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-}
-
-.side_left {
-  height: 100vh;
-  width: 50vw;  
-  display: block;
-  @media (max-width: 760px) {
-  display: none;
-  }
-}
-
-.slider_one {
-  height: 100vh;
-  width: 50vw;
-  overflow: hidden;
-  ul {
-    height: 500vh;
-    position: relative;
-  }
-}
-
-//side right
-
-.side_right {
-  width: 50vw;
-  height: 100vh;
-  @media (max-width: 760px) {
-  width: 100vw;
-  }
-}
-
-.slider_top, .slider_buttom {
-  overflow: hidden;
-  height: 50vh;
-  width: 50vw;
-  @media (max-width: 760px) {
-  width: 100vw;
-  }
-}
-
-.slider_container {
-  position: relative;
-  width: 300vw;
-  @media (max-width: 760px) {
-  width: 510vw;
-  }
-}
-
-.item {
-  display: inline-block;
-  vertical-align: top;
-}
-
-//slider insides
-
-.photo_one {
-  background-image: url(../img/drzewo.JPG);
-  background-size: cover;
-  height: 100vh;
-  width: 50vw;
-}
-
-.photo_two {
-  background-image: url(../img/kato.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 50vw;
-}
-.photo_three {
-  background-image: url(../img/zenit_lublin.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 50vw;
-}
-
-%item_right {
-  height: 50vh;
-  width: 50vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 760px) {
-  width: 100vw;
-  }
-}
-
-.four {
-  @extend %item_right;
-  background-color: white;
-}
-
-.two {
-  @extend %item_right;
-  background-color: green;
-}
-
-.one {
-  @extend %item_right;
-  background-image: url(../img/zenit_lublin.jpg);
-   background-position: center;
 }

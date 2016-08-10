@@ -4,6 +4,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 .main_bar {
   display: flex;
   flex-direction: row;
@@ -121,7 +125,6 @@ a {
   transition-duration: 500ms;
   transition-timing-function: ease-out;
   padding: 3vh;
-  font-size: 4vw;
   display: flex;
   border: 5px solid white;
   color: white;
@@ -129,10 +132,22 @@ a {
   border-radius: 4%;
   flex-direction: row;
   opacity: 0.3;
+  text-align: center;
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 2vw;
+    opacity: 1;
+  }
   img {
     display: flex;
     margin-right: 3vh;
   }
+}
+
+.white {
+  opacity: 1;
 }
 
 .box_borderSlajd {
@@ -157,6 +172,7 @@ color: #BDB93C;
     border: 2px solid white;
     border-radius: 5%;
     padding: 1vh;
+    color: white;
   }
 }
 
@@ -185,10 +201,14 @@ color: #BDB93C;
 
 .banner {
   background-image: url(../img/TLO_NA_FB_2.jpg);
-  background-size: cover;
-  background-position: 0 -100px;
+ background-position: center;
+//  background-position: 0 -100px;
   height: 50vh;
   width: 100vw;
+   background-size: 110% 170%;
+  -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
 }
 
 .main_fest {
@@ -214,16 +234,37 @@ color: #BDB93C;
   display: flex;
   flex-direction: row;
   align-content: space-around;
+  padding: 3vh;
   div {
     height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  img {
+    display: flex;
+  }
+}
+
+.invites {
+  display: flex;
+  flex-direction: column;
 }
 
 // w polske
 
+.navigation {
+  opacity: 0.6;
+  z-index: 1;
+  position: absolute;
+  top: 20vh;
+  left: 6vh;
+  img {
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+}
 
 .main_slider {
   overflow: hidden;
@@ -285,14 +326,14 @@ color: #BDB93C;
 //slider insides
 
 .photo_one {
-  background-image: url(../img/drzewo.JPG);
+  background-image: url(../img/beskid.jpg);
   background-size: cover;
   height: 100vh;
   width: 50vw;
 }
 
 .photo_two {
-  background-image: url(../img/kato.jpg);
+  background-image: url(../img/krawcow.jpg);
   background-size: cover;
   height: 100vh;
   width: 50vw;
@@ -310,6 +351,7 @@ color: #BDB93C;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 4vh;
   @media (max-width: 760px) {
   width: 100vw;
   }
@@ -320,13 +362,22 @@ color: #BDB93C;
   background-color: white;
 }
 
-.two {
+.artTitle_three {
   @extend %item_right;
-  background-color: green;
+  background-image: url(../img/krawcow.jpg);
+   background-position: center;
 }
 
-.one {
+
+.artTitle_one {
   @extend %item_right;
   background-image: url(../img/zenit_lublin.jpg);
    background-position: center;
 }
+
+.artTitle_two{
+  @extend %item_right;
+  background-image: url(../img/beskid.jpg);
+   background-position: center;
+}
+

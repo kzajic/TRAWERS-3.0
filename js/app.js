@@ -15,7 +15,7 @@ $(document).ready(function (){
   $(this).css("color", "#532B13");  
   });
   
-  
+  //HOME PAGE
   // zdjecia animacja
   
  var box = $(".main_box").find("nav").find(".box");
@@ -54,7 +54,8 @@ var box_fest = $(".right_top");
    });  
   
   
-  // WPOLSKE! slidery
+  // subpage W POLSKE! 
+  //slidery
   
   //one
   
@@ -181,13 +182,32 @@ if (window.matchMedia('(max-width: 760px)').matches) {
   
   };
   
-$('.slider_top').on('click', function(event){
+
+  
+$('.navigation').on('click', function(event){
   console.log("klik");
+  
+ 
+  
+  $(this).find("img").css({
+        "-webkit-transform": "rotate(-360deg)",
+        "-moz-transform": "rotate(-360deg)",
+        "transform": "rotate(-360deg)",
+    });
+  
 scroll();
   
 });
   
+//subpage festiwal 
   
+  
+  var banner = $(".banner");
+  
+  banner.on('mouseenter', function(){ 
+   $(this).css("background-size", "100% 160%");
+  $(this).css("background-position", "center");
+  });
     
 });
 

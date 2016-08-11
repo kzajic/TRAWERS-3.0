@@ -182,22 +182,34 @@ if (window.matchMedia('(max-width: 760px)').matches) {
   
   };
   
-
   
-$('.navigation').on('click', function(event){
-  console.log("klik");
-  
- 
-  
-  $(this).find("img").css({
-        "-webkit-transform": "rotate(-360deg)",
-        "-moz-transform": "rotate(-360deg)",
-        "transform": "rotate(-360deg)",
-    });
-  
-scroll();
-  
+   var value = 0
+$('.navigation').find("img").rotate({
+  bind:
+  {
+    click: function(){
+            value -=80;
+      console.log(value);
+            $(this).rotate({ animateTo:value})
+            scroll();
+        }
+    }
 });
+  
+  
+var readButton = $(".art_link");
+  
+  readButton.on('mouseenter', function(){ 
+  $(this).css("background-color", "#4A2D25");
+  $(this).css("color", "white");  
+  });
+  
+  readButton.on('mouseleave', function(){ 
+  $(this).css("background-color", "white");
+  $(this).css("color", "#4A2D25");  
+  });
+  
+  
   
 //subpage festiwal 
   

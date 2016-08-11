@@ -80,7 +80,7 @@ a {
 }
     .left_bottom {
     @extend %position;
-    height:45vh;
+    height:50vh;
     background-image: url(../img/tatry.JPG);
     background-position: center;
     background-size: 110% 160%;
@@ -184,14 +184,14 @@ color: #BDB93C;
 }
 
 .trawers2 {
-    background-color: #3FB592;
+  background-color: #3FB592;
   color: white;
   font-size: 3vh;
   padding: 3vh;
 }
 
 .trawers3 {
-    background-color: #CC5B33;
+  background-color: #CC5B33;
   color: white;
   font-size: 3vh;
   padding: 3vh;
@@ -201,14 +201,13 @@ color: #BDB93C;
 
 .banner {
   background-image: url(../img/TLO_NA_FB_2.jpg);
- background-position: center;
-//  background-position: 0 -100px;
+  background-position: center;
   height: 50vh;
   width: 100vw;
-   background-size: 110% 170%;
+  background-size: 110% 170%;
   -moz-transition: all 500ms;
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .main_fest {
@@ -222,8 +221,8 @@ color: #BDB93C;
 .info_fest {
   text-align: justify;
   padding: 8vh;
-  background-color:  #4A2D25;
-  color: white;
+  background-color: white;
+  color: #4A2D25;
   font-size: 3vh;
   line-height: 4vh;
 }
@@ -254,15 +253,14 @@ color: #BDB93C;
 // w polske
 
 .navigation {
-  opacity: 0.6;
   z-index: 1;
   position: absolute;
   top: 20vh;
-  left: 6vh;
+  left: 40vw;
   img {
-    -moz-transition: all 500ms;
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
+    -moz-transition: all 1600ms;
+    -webkit-transition: all 1600ms;
+    transition: all 1600ms;
   }
 }
 
@@ -326,7 +324,7 @@ color: #BDB93C;
 //slider insides
 
 .photo_one {
-  background-image: url(../img/beskid.jpg);
+  background-image: url(../img/tatry.JPG);
   background-size: cover;
   height: 100vh;
   width: 50vw;
@@ -335,12 +333,14 @@ color: #BDB93C;
 .photo_two {
   background-image: url(../img/krawcow.jpg);
   background-size: cover;
+  background-position: bottom;
   height: 100vh;
   width: 50vw;
 }
 .photo_three {
   background-image: url(../img/zenit_lublin.jpg);
   background-size: cover;
+  background-position: bottom;
   height: 100vh;
   width: 50vw;
 }
@@ -351,7 +351,7 @@ color: #BDB93C;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4vh;
+  padding: 2vh 4vh;
   @media (max-width: 760px) {
   width: 100vw;
   }
@@ -360,12 +360,28 @@ color: #BDB93C;
 .four {
   @extend %item_right;
   background-color: white;
+  flex-direction: column;
+  text-align: justify;
+  color: #4A2D25;
+  font-size: 3vh;
+  line-height: 4vh;
+}
+
+.art_link {
+  margin: 4vh;
+ color: #4A2D25;
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+  border-radius: 3%;
+  font-size: 3vh;
+  padding: 1vh 2vh;
+  border: 2px solid #4A2D25;;
 }
 
 .artTitle_three {
   @extend %item_right;
   background-image: url(../img/krawcow.jpg);
-   background-position: center;
+  background-position: bottom;
 }
 
 
@@ -377,7 +393,58 @@ color: #BDB93C;
 
 .artTitle_two{
   @extend %item_right;
-  background-image: url(../img/beskid.jpg);
+  background-image: url(../img/tatry.JPG);
    background-position: center;
 }
 
+
+//artykul1
+
+section.module.parallax {
+  height: 80vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  @extend %position;
+}
+
+section.module.parallax-1 {
+  background-image: url("../img/zenit_lublin.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("../img/zenit_lublin.jpg");
+  background-position: 90% 90%;
+}
+
+section.module.parallax-3 {
+  background-image: url("../img/krawcow.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("../img/krawcow.jpg");
+  background-position: bottom;
+}
+
+section.module.parallax-5 {
+  background-image: url("../img/tatry.JPG");
+  background-position: top;
+}
+
+section.module.parallax-6 {
+  background-image: url("../img/tatry.jpg");
+  background-position: bottom;
+}
+
+.container {
+  flex-direction: column;
+  padding: 10vh 15vh;
+  font-size: 3vh;
+  text-align: justify;
+  line-height: 5vh;
+   color: #4A2D25;
+  h4 {
+    font-weight: bold;
+  }
+}

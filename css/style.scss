@@ -181,6 +181,9 @@ color: #BDB93C;
   color: white;
   font-size: 3vh;
   padding: 3vh;
+  -moz-transition: all 800ms;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
 }
 
 .trawers2 {
@@ -188,6 +191,9 @@ color: #BDB93C;
   color: white;
   font-size: 3vh;
   padding: 3vh;
+  -moz-transition: all 800ms;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
 }
 
 .trawers3 {
@@ -195,8 +201,15 @@ color: #BDB93C;
   color: white;
   font-size: 3vh;
   padding: 3vh;
+  -moz-transition: all 800ms;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
 }
 
+
+.transparent {
+  opacity: 0.5;
+}
 //podstrona fest
 
 .banner {
@@ -204,7 +217,6 @@ color: #BDB93C;
   background-position: center;
   height: 50vh;
   width: 100vw;
-  background-size: 110% 170%;
   -moz-transition: all 500ms;
   -webkit-transition: all 500ms;
   transition: all 500ms;
@@ -253,10 +265,13 @@ color: #BDB93C;
 // w polske
 
 .navigation {
-  z-index: 1;
-  position: absolute;
-  top: 20vh;
-  left: 40vw;
+  @extend %position;
+  flex-direction: row;
+  
+}
+
+.rotate {
+  display: flex;
   img {
     -moz-transition: all 1600ms;
     -webkit-transition: all 1600ms;
@@ -368,6 +383,7 @@ color: #BDB93C;
 }
 
 .art_link {
+  display: flex;
   margin: 4vh;
  color: #4A2D25;
   transition-duration: 500ms;

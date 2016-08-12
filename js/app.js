@@ -184,11 +184,11 @@ if (window.matchMedia('(max-width: 760px)').matches) {
   
   
    var value = 0
-$('.navigation').find("img").rotate({
+$('.rotate').find("img").rotate({
   bind:
   {
     click: function(){
-            value -=80;
+            value -=300;
       console.log(value);
             $(this).rotate({ animateTo:value})
             scroll();
@@ -214,13 +214,20 @@ var readButton = $(".art_link");
 //subpage festiwal 
   
   
-  var banner = $(".banner");
+ 
+
+
+//subpage gazeta
+
+
+var section = $(".transparent");
   
-  banner.on('mouseenter', function(){ 
-   $(this).css("background-size", "100% 160%");
-  $(this).css("background-position", "center");
+  section.on('mouseenter', function(){ 
+   $(this).removeClass("transparent");
   });
-    
+  
+  section.on('mouseleave', function(){ 
+   $(this).addClass("transparent");
+  });
+             
 });
-
-

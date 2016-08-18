@@ -366,6 +366,7 @@ color: #BDB93C;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 2vh 4vh;
   @media (max-width: 760px) {
   width: 100vw;
@@ -398,6 +399,7 @@ color: #BDB93C;
   @extend %item_right;
   background-image: url(../img/krawcow.jpg);
   background-position: bottom;
+  
 }
 
 

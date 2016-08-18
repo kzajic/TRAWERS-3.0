@@ -183,14 +183,11 @@ if (window.matchMedia('(max-width: 760px)').matches) {
   };
   
   
-   var value = 0
+
 $('.rotate').find("img").rotate({
   bind:
   {
     click: function(){
-            value -=300;
-      console.log(value);
-            $(this).rotate({ animateTo:value})
             scroll();
         }
     }
